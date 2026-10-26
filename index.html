@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Basira: Private AI Workspace</title>
+  <style>
+    :root { --primary: #008f73; --text: #1a2634; --muted: #58677a; --bg: #fafcfb; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--text);
+      font-family: -apple-system, "Segoe UI", Roboto, Inter, Arial, sans-serif; line-height: 1.65; }
+    main { max-width: 760px; margin: 0 auto; padding: 48px 24px 80px; }
+    header { border-bottom: 3px solid var(--primary); margin-bottom: 32px; padding-bottom: 16px; }
+    h1 { font-size: 1.9rem; margin: 0 0 6px; }
+    .updated { color: var(--muted); font-size: 0.95rem; }
+    h2 { color: var(--primary); font-size: 1.25rem; margin-top: 40px; }
+    a { color: var(--primary); }
+    strong { color: var(--text); }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Privacy Policy — Basira: Private AI Workspace</h1>
+    <p class="updated">Last updated: 2026-10-26</p>
+  </header>
+
+  <h2>Overview</h2>
+  <p>Basira: Private AI Workspace ("Basira") is a local-first browser extension. This policy
+  describes what data Basira handles, where it lives, and when anything leaves your device.
+  The short version: <strong>Basira collects no analytics, performs no background network activity,
+  and stores your work in your own browser. The only data that ever leaves your device is what
+  you explicitly send to the AI provider you choose, and you review it before sending.</strong></p>
+
+  <h2>What Data We Collect</h2>
+  <p>Basira does not collect data about you. There is no account, no analytics, no telemetry,
+  no cookies, and no third-party tracking of any kind.</p>
+  <p>Data Basira <strong>stores locally in your browser</strong> (never on our servers — we have no servers):</p>
+  <ul>
+    <li>Your provider API keys and provider preferences (stored in browser storage; you can
+      choose key persistence per session or permanently)</li>
+    <li>Chat history and conversation context</li>
+    <li>Vault items, collections, and projects you save</li>
+    <li>Prompts, personas, and application preferences</li>
+    <li>Mind maps, scraped data, and audit results you create</li>
+  </ul>
+  <p>Data Basira handles <strong>transiently in memory</strong> while you work:</p>
+  <ul>
+    <li>The content of pages, tabs, files, or selections you explicitly attach to a chat</li>
+    <li>Your open tabs list, shown to you so you can pick which tabs to attach (not retained,
+      not transmitted)</li>
+  </ul>
+
+  <h2>When Data Leaves Your Device</h2>
+  <p>The only network requests Basira makes are the ones you trigger when you run a
+  provider-backed action (chat, summarize, extract, translate, compare, expand a mind map,
+  and similar). When you do:</p>
+  <ul>
+    <li>Your prompt, the selected model, the conversation context, and <strong>only</strong> the context you
+      attached (page, file, Vault item, project, scrape result, transcript) are sent to the
+      AI provider you configured.</li>
+    <li>Before sending, Basira shows you the provider, model, route, and an estimate of the
+      context size, so you can review exactly what will be transmitted.</li>
+    <li>If you configure a local endpoint (e.g., Ollama running on your machine), requests go to
+      that address and no cloud provider is involved.</li>
+  </ul>
+  <p>Supported providers: OpenAI, Google Gemini, Anthropic Claude, OpenRouter, DeepSeek,
+  and local/custom endpoints via Ollama or a base URL you set. Each provider processes your
+  requests under its own privacy policy, which we encourage you to review.</p>
+
+  <h2>Third-Party Services</h2>
+  <p>Basira itself uses no third-party services — no analytics platforms, no crash reporting,
+  no hosted fonts or scripts. Everything in the extension package runs locally.</p>
+  <p>The AI providers you optionally connect to are independent third parties. When you send a
+  request, that provider receives the request content as described above.</p>
+
+  <h2>Data Sharing and Selling</h2>
+  <p>We do not sell, rent, license, or share your data with anyone. Data you send to an AI
+  provider goes only to that provider, only because you sent it, and only to answer your
+  request.</p>
+
+  <h2>Data Retention and Deletion</h2>
+  <ul>
+    <li>All locally stored data lives in your browser profile and remains there until you delete
+      it from within Basira or clear your browser data.</li>
+    <li>Uninstalling the extension removes its stored data from your browser.</li>
+    <li>You can delete individual chats, Vault items, projects, and prompts at any time inside
+      the app, and export or back up your Vault before doing so.</li>
+  </ul>
+
+  <h2>Security</h2>
+  <ul>
+    <li>API keys are stored only in your browser's local storage and are sent only to the
+      provider they belong to, over HTTPS.</li>
+    <li>All JavaScript in the extension is bundled inside the package; no code is downloaded or
+      executed from remote sources.</li>
+    <li>Optical character recognition (OCR) runs entirely on your device.</li>
+  </ul>
+
+  <h2>Children's Privacy</h2>
+  <p>Basira does not knowingly collect personal information from anyone, including children,
+  because it does not collect personal information at all beyond what you type into your own
+  AI requests.</p>
+
+  <h2>Changes to This Policy</h2>
+  <p>If Basira's data practices change in a future version, this policy will be updated before
+  that version is published, with the "Last updated" date revised accordingly. Because the
+  extension has no accounts or email list, material changes will also be described in the
+  release notes of the affected version.</p>
+
+  <h2>Contact</h2>
+  <p>Privacy questions or concerns: <strong>[contact email — same as the Chrome Web Store listing]</strong></p>
+  <p>Project and issue tracker:
+  <a href="https://github.com/HossamGouda/basira-private-ai-workspace/issues">github.com/HossamGouda/basira-private-ai-workspace/issues</a></p>
+</main>
+</body>
+</html>
